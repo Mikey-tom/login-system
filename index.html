@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+    </div>
+    
     <div class="login-container">
         <h2>Login</h2>
         <form id="loginForm">
@@ -17,7 +22,40 @@
             <button type="submit">Login</button>
         </form>
         <div id="error-message"></div>
+        <p>
+            <a href="#" id="forgotPassword">Forgot Password?</a> | 
+            <a href="#" id="signupLink">Signup</a>
+        </p>
     </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Signup</h2>
+            <form id="signupForm">
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Forgotten Password Modal -->
+    <div id="forgotPasswordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Forgot Password</h2>
+            <form id="forgotPasswordForm">
+                <label for="forgotEmail">Email:</label>
+                <input type="email" id="forgotEmail" required>
+                <button type="submit">Reset Password</button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
