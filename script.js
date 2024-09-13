@@ -7,12 +7,11 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         document.getElementById('error-message').innerText = 'Please fill in all fields.';
         return;
     }
-    // Add fetch API call to the backend here
-    // For now, simulate a success
+    // Simulate success
     document.getElementById('error-message').innerText = 'Login successful!';
 });
 
-// Handle modal opening and closing
+// Modal management
 const signupModal = document.getElementById('signupModal');
 const forgotPasswordModal = document.getElementById('forgotPasswordModal');
 const signupLink = document.getElementById('signupLink');
@@ -46,7 +45,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         alert('Please fill in all fields');
         return;
     }
-    // Add your signup logic here
+    // Simulate signup
     alert('Signup successful!');
     signupModal.style.display = 'none';
 });
@@ -59,7 +58,7 @@ document.getElementById('forgotPasswordForm').addEventListener('submit', functio
         alert('Please enter your email');
         return;
     }
-    // Add forgot password logic here
+    // Simulate password reset
     alert('Password reset email sent!');
     forgotPasswordModal.style.display = 'none';
 });
