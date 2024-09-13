@@ -21,7 +21,7 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(-45deg, #2c3e50, #4a4a4a, #3b3b3b, #1c1c1c);
-    background-size: 400% 400%;
+    background-size: 400% 500%;
     animation: gradientBackground 15s ease infinite;
     margin: 0;
     color: #fff;
