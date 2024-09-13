@@ -1,4 +1,4 @@
-/* Navbar styling */
+/* Dark Theme Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
 
 .navbar a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -20,36 +20,43 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(120deg, #3498db, #8e44ad);
-    background-size: 200% 200%;
-    animation: backgroundAnimation 10s ease infinite;
+    background: linear-gradient(-45deg, #2c3e50, #4a4a4a, #3b3b3b, #1c1c1c);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
     margin: 0;
+    color: #fff;
 }
 
-@keyframes backgroundAnimation {
+@keyframes gradientBackground {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
 
+/* Login Box Styling */
 .login-container {
-    background-color: #fff;
+    background-color: #1e1e1e;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px 0px #000;
+    border-radius: 10px; /* Smaller rounded edges */
+    border: 1px solid #444; /* Thinner border for a sleek look */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8); /* Softer shadow */
+    width: 300px;
     text-align: center;
 }
 
 h2 {
     margin-bottom: 20px;
+    color: #fff;
 }
 
 input {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     border-radius: 4px;
     width: 100%;
+    background-color: #2e2e2e;
+    color: #fff;
 }
 
 button {
@@ -60,6 +67,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -68,6 +76,7 @@ button:hover {
 
 p {
     margin-top: 10px;
+    color: #fff;
 }
 
 #error-message {
@@ -82,14 +91,16 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
+    background-color: #2e2e2e;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0px 0px 10px 0px #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    width: 300px;
 }
 
 .modal-content {
     text-align: center;
+    color: #fff;
 }
 
 .close {
@@ -102,5 +113,5 @@ p {
 }
 
 .close:hover {
-    color: #000;
+    color: #fff;
 }
